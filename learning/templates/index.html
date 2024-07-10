@@ -40,7 +40,7 @@
 		
 		<!-- Medipro CSS -->
         <link rel="stylesheet" href="{% static 'css/normalize.css' %}">
-        <link rel="stylesheet" href="{% static 'style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
         <link rel="stylesheet" href="{% static 'css/responsive.css' %}">
 		
     </head>
@@ -114,7 +114,7 @@
 							<div class="col-lg-3 col-md-3 col-12">
 								<!-- Start Logo -->
 								<div class="logo">
-									<a href="index.html"><img src="{% static 'img/logo.png' %}" alt="#"></a>
+									<a href="{% url 'home' %}"><img src="{% static 'img/logo.png' %}" alt="#"></a>
 								</div>
 								<!-- End Logo -->
 								<!-- Mobile Nav -->
@@ -128,22 +128,22 @@
 										<ul class="nav menu">
 											<li class="active"><a href="#">Home <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="index.html">Home Page 1</a></li>
+													<li><a href="{% url 'home' %}">Home Page 1</a></li>
 												</ul>
 											</li>
 											<li><a href="#">Doctos </a></li>
 											<li><a href="#">Services </a></li>
 											<li><a href="#">Pages <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="404.html">404 Error</a></li>
+													<li><a href="{% url '404' %}">404 Error</a></li>
 												</ul>
 											</li>
 											<li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
 												<ul class="dropdown">
-													<li><a href="blog-single.html">Blog Details</a></li>
+													<li><a href="{% url 'blog-single' %}">Blog Details</a></li>
 												</ul>
 											</li>
-											<li><a href="contact.html">Contact Us</a></li>
+											<li><a href="{% url 'contact' %}">Contact Us</a></li>
 										</ul>
 									</nav>
 								</div>
@@ -489,35 +489,35 @@
 						<div class="owl-carousel portfolio-slider">
 							<div class="single-pf">
 								<img src="{% static 'img/pf1.jpg' %}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'portfolio-details' %}" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{% static 'img/pf2.jpg' %}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'portfolio-details' %}" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{% static 'img/pf3.jpg' %}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'portfolio-details' %}" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{% static 'img/pf4.jpg' %}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'portfolio-details' %}" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{% static 'img/pf1.jpg' %}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'portfolio-details' %}" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{% static 'img/pf2.jpg' %}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'portfolio-details' %}" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{% static 'img/pf3.jpg' %}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'portfolio-details' %}" class="btn">View Details</a>
 							</div>
 							<div class="single-pf">
 								<img src="{% static 'img/pf4.jpg' %}" alt="#">
-								<a href="portfolio-details.html" class="btn">View Details</a>
+								<a href="{% url 'portfolio-details' %}" class="btn">View Details</a>
 							</div>
 						</div>
 					</div>
@@ -724,7 +724,7 @@
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">22 Aug, 2020</div>
-									<h2><a href="blog-single.html">We have annnocuced our new product.</a></h2>
+									<h2><a href="{% url 'blog-single' %}">We have annnocuced our new product.</a></h2>
 									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
 								</div>
 							</div>
@@ -740,7 +740,7 @@
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">15 Jul, 2020</div>
-									<h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
+									<h2><a href="{% url 'blog-single' %}">Top five way for solving teeth problems.</a></h2>
 									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
 								</div>
 							</div>
@@ -756,7 +756,7 @@
 							<div class="news-body">
 								<div class="news-content">
 									<div class="date">05 Jan, 2020</div>
-									<h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
+									<h2><a href="{% url 'blog-single' %}">We provide highly business soliutions.</a></h2>
 									<p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod tempor incididunt sed do incididunt sed.</p>
 								</div>
 							</div>
